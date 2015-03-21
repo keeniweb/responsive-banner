@@ -1,0 +1,31 @@
+/* ----------------------------
+layout
+---------------------------- */
+
+/* row */
+.row
+{
+    clear: both;
+    overflow: hidden;
+}
+
+/* containers */
+.container-wide
+{
+    margin: 0 auto;
+    padding-left: 0em;
+    padding-right: 0em;
+    max-width: 58em;
+}
+
+/* ----------------------------
+wide
+---------------------------- */
+@media (min-width: 50em)
+{
+.container-wide
+    {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
