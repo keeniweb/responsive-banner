@@ -1,0 +1,120 @@
+/* ----------------------------
+banner
+---------------------------- */
+
+.row--banner
+{
+    background-color: #626e6d;
+    background-image: url(../img/banner-small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width: 38em)
+{
+    .row--banner { background-image: url(../img/banner.jpg); }
+}
+
+/* ----------------------------
+header
+---------------------------- */
+
+.header
+{
+    padding: 1.25em 1em;
+}
+
+.header__logo
+{
+    float: left;
+    padding: 2em .2em 2em;
+    margin-bottom: 8em;
+    max-width: 60%;
+}
+
+@media (min-width: 38em)
+{
+    .header__logo
+    {
+        padding: .2em .2em 2em;
+        margin-bottom: 20em;
+        max-width: 60%;
+    }
+}
+
+/*------------------------------
+menu
+------------------------------*/
+
+.menu
+{
+    float: right;
+    width: 100%;
+    height: 75px;
+    margin-top: -75px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.menu ul
+{
+    margin-top: 25px;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.menu li
+{
+    display: inline-block;
+    margin: 0;
+}
+
+.menu a
+{
+    display: block;
+    margin-right: .1em;
+    padding: 0.3em 0.3em 0em;
+    border-radius: 0.3em;
+    color: #5E6A76;
+    background: none;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.current a
+{
+    color: #fff;
+    background: #00bcb9;
+}
+
+.menu a:focus { background: #000; }
+.menu a:hover
+{
+    color: #fff;
+    background: #00bcb9;
+}
+
+.menu a:focus { background: #00bcb9; }
+
+@media (min-width: 38em)
+{
+    .menu
+    {
+        height: 100px;
+        margin-top: -100px;
+    }
+
+    .menu a
+    {
+        font-size: 0.8em;
+        padding: 1em 1em .7em;
+    }
+    
+    .header { padding: 2.2222em 2em;}
+    
+    .row--menu { width: 12em; }
+    
+    .row--menu a { font-size: 0.8333em; }
+}
